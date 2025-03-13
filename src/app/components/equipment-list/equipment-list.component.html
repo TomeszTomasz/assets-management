@@ -1,0 +1,10 @@
+<div class="equipment">
+  <mat-chip-set>
+    @for (device of equipment(); track device.id) {
+      <mat-chip>
+        <mat-icon matChipAvatar>{{ ICON_EQUIPMENT_TYPE_MAP[device.type] }}</mat-icon>
+        {{ device.name }}
+      </mat-chip>
+    }
+  </mat-chip-set>
+</div>

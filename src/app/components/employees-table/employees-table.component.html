@@ -1,0 +1,19 @@
+<div class="table">
+  <div class="table__search">
+    <mat-form-field>
+      <mat-label>Search</mat-label>
+      <input [formControl]="searchFormControl" matInput>
+    </mat-form-field>
+  </div>
+
+  <div class="table__header">
+    <div>Name</div>
+    <div>Email</div>
+    <div>Department</div>
+    <div>Equipment</div>
+    <div>Status</div>
+  </div>
+  @for (employee of filteredEmployees(); track employee.id) {
+    <app-employee-table-row [employee]="employee" (click)="redirectToDetails(employee)"></app-employee-table-row>
+  }
+</div>

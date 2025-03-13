@@ -1,0 +1,14 @@
+<div class="row">
+  <div>{{ employee().name }}</div>
+  <div>{{ employee().email }}</div>
+  <div>{{ employee().department }}</div>
+  <div>
+    <app-equipment-list [equipment]="employee().equipment"></app-equipment-list>
+  </div>
+  <div class="row__status">
+    @if (employee().status === EmployeeStatus.AWAITING_CONFIRMATION) {
+      <mat-spinner [diameter]="20"></mat-spinner>
+    }
+    {{ employee().status }}
+  </div>
+</div>

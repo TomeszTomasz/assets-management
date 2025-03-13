@@ -1,0 +1,33 @@
+:host {
+  display: block;
+}
+
+.offboard-dialog {
+  padding: 32px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    font-size: 30px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 16px;
+  }
+
+  &__field {
+    grid-column: span 2;
+
+    &--compact {
+      grid-column: span 1;
+    }
+
+    &--notes {
+      max-height: 300px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+:host {
+  display: block;
+}
+
+.table {
+  width: 100%;
+
+  &__search {
+    display: flex;
+    justify-content: center;
+
+    mat-form-field {
+      width: 400px;
+    }
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: 150px 250px 150px 1fr 250px;
+    font-weight: bold;
+    padding: 16px;
+    border-bottom: 2px solid $light-gray;
+  }
+}

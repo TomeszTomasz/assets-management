@@ -1,0 +1,24 @@
+@use 'variables' as *;
+
+.app {
+  display: flex;
+  flex-direction: column;
+  background-color: $slate;
+  min-height: 100%;
+
+  &__header {
+    font-size: 30px;
+    padding: 32px;
+    background-color: $charcoal;
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding: 96px;
+  }
+
+  &__footer {
+    background-color: $charcoal;
+    height: 50px;
+  }
+}

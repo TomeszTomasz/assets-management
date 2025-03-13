@@ -1,0 +1,23 @@
+@use 'variables' as *;
+@use '@angular/material' as mat;
+
+:host {
+  display: block;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 150px 250px 150px 1fr 250px;
+  padding: 16px;
+  transition: background-color 100ms;
+
+  &:hover {
+    background-color: $space-gray;
+    cursor: pointer;
+  }
+
+  &__status {
+    display: flex;
+    gap: 8px;
+  }
+}

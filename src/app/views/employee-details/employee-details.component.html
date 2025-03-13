@@ -1,0 +1,56 @@
+<div class="employee">
+  <button [routerLink]="'/dashboard'" mat-button>
+    <mat-icon>arrow_back</mat-icon>
+    Back
+  </button>
+  <div class="employee__header">
+    {{ employee()?.name }}
+    <button (click)="offboard()" mat-flat-button>Offboard</button>
+  </div>
+  <div class="employee__details">
+    <div class="details">
+      <div class="details__header">
+        Details
+      </div>
+      <div class="entry">
+        <div class="entry__label">
+          ID
+        </div>
+        <div class="entry__value">
+          {{ employee()?.id }}
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry__label">
+          Email
+        </div>
+        <div class="entry__value">
+          {{ employee()?.email }}
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry__label">
+          Department
+        </div>
+        <div class="entry__value">
+          {{ employee()?.department }}
+        </div>
+      </div>
+      <div class="entry">
+        <div class="entry__label">
+          Status
+        </div>
+        <div class="entry__value">
+          {{ employee()?.status }}
+        </div>
+      </div>
+
+    </div>
+    <div class="details">
+      <div class="details__header">
+        Equipment
+      </div>
+      <app-equipment-list [equipment]="employee()?.equipment"></app-equipment-list>
+    </div>
+  </div>
+</div>

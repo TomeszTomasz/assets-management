@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+.dashboard {
+
+  &__header {
+    font-size: 30px;
+    margin-bottom: 36px;
+  }
+
+  &__content {
+    border-radius: 16px;
+    padding: 16px 0;
+    box-shadow: 12px 12px 32px 16px $space-gray;
+  }
+}
