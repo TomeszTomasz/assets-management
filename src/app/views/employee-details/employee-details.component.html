@@ -3,10 +3,12 @@
     <mat-icon>arrow_back</mat-icon>
     Back
   </button>
-  <div class="employee__header">
-    {{ employee()?.name }}
-    <button (click)="offboard()" mat-flat-button>Offboard</button>
-  </div>
+  @if (employee()?.status !== EmployeeStatus.OFFBOARDED) {
+    <div class="employee__header">
+      {{ employee()?.name }}
+      <button (click)="offboard()" mat-flat-button>Offboard</button>
+    </div>
+  }
   <div class="employee__details">
     <div class="details">
       <div class="details__header">

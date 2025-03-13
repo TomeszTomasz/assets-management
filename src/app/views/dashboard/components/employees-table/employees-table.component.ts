@@ -1,5 +1,5 @@
 import {Component, computed, inject, input} from '@angular/core'
-import {Employee} from '../../models/employee.model'
+import {Employee} from '../../../../models/employee.model'
 import {Router} from '@angular/router'
 import {FormControl, FormsModule, ReactiveFormsModule} from '@angular/forms'
 import {EmployeeTableRowComponent} from '../employee-table-row/employee-table-row.component'

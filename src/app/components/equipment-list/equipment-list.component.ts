@@ -1,4 +1,4 @@
-import {Component, input} from '@angular/core'
+import {ChangeDetectionStrategy, Component, input} from '@angular/core'
 import {Equipment, EquipmentType} from '../../models/equipment.model'
 import {MatChip, MatChipAvatar, MatChipSet} from '@angular/material/chips'
 import {MatIcon} from '@angular/material/icon'
@@ -7,7 +7,8 @@ import {MatIcon} from '@angular/material/icon'
   selector: 'app-equipment-list',
   imports: [MatChip, MatChipSet, MatIcon, MatChipAvatar],
   templateUrl: './equipment-list.component.html',
-  styleUrl: './equipment-list.component.scss'
+  styleUrl: './equipment-list.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EquipmentListComponent {
   equipment = input<Equipment[] | null>()

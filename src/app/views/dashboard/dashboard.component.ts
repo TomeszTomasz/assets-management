@@ -1,6 +1,6 @@
 import {Component, inject, OnInit} from '@angular/core'
 import {EmployeeService} from '../../services/employee.service'
-import {EmployeesTableComponent} from '../../components/employees-table/employees-table.component'
+import {EmployeesTableComponent} from './components/employees-table/employees-table.component'
 
 @Component({
   selector: 'app-dashboard',

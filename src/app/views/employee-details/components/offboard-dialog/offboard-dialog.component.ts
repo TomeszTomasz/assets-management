@@ -2,13 +2,13 @@ import {ChangeDetectionStrategy, ChangeDetectorRef, Component, inject} from '@an
 import {FormsModule, NonNullableFormBuilder, ReactiveFormsModule, Validators} from '@angular/forms'
 import {MatFormFieldModule} from '@angular/material/form-field'
 import {MatInputModule} from '@angular/material/input'
-import {HumanizeErrorsPipe} from '../../../pipes/humanize-errors.pipe'
+import {HumanizeErrorsPipe} from '../../../../pipes/humanize-errors.pipe'
 import {MatButtonModule} from '@angular/material/button'
 import {MatSelectModule} from '@angular/material/select'
 import {MatDialogModule, MatDialogRef} from '@angular/material/dialog'
 import {MatIcon} from '@angular/material/icon'
-import {InferFormControls} from '../../../utils/infer-form-controls'
-import {OffboardRequest} from '../../../models/offboard-request.model'
+import {InferFormControls} from '../../../../utils/infer-form-controls'
+import {OffboardRequest} from '../../../../models/offboard-request.model'
 
 @Component({
   selector: 'app-offboard-dialog',
